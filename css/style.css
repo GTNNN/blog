@@ -74,6 +74,12 @@ img {
   color: #2983a4;
   background-color: #ffc0fe;
   cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition: .2s;
 }
 
 /* 导航栏 end */
@@ -122,6 +128,7 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #ecf0f3;
+  cursor: pointer;
 }
 
 .model li img {
@@ -162,6 +169,7 @@ img {
   transition: .3s;
   box-sizing: border-box;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .pageListTemplate:last-child {
