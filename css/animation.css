@@ -1,0 +1,54 @@
+.animate-click {
+  /* normal 状态 */
+}
+
+.animate-click:active {
+  /* active 状态,添加动画类名 */
+  animation: ripple 1s linear infinite;
+}
+
+.animate-click:not(:active) {
+  /* 按钮松开后,过渡回 normal 状态,动画继续执行 */
+  transition: ease .5s;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 0px #fff;
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px 10px rgba(236, 183, 252, 0.5);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 0px #fff;
+  }
+}
+
+.animate-text {
+  display: inline-block;
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

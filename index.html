@@ -1,9 +1,6 @@
 <!--
  * @description:
 -->
-<!--
- * @description:
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,20 +8,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>亚克力主页</title>
-  <link rel="stylesheet" href="./css/myBlog.css">
-  <link rel="shortcut icon" href="./myImg/joker.svg" type="image/x-icon">
-</head>
+  <!-- <title>亚克力主页</title> -->
+  <title>
+    Hexo
+  </title> <!-- 设置网页标题,使用博客配置文件的 title 选项 -->
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- 引入style.css 样式表文件 -->
+    <link rel="stylesheet" href="../source/css/style.css">
+    <link rel="stylesheet" href="../source/css/animation.css">
+    <link rel="shortcut icon" href="../source/joker.svg" type="image/x-icon">
+<meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
   <div class="content">
     <!-- 导航栏 begin -->
     <nav class="nav shadow">
       <div class="logo_area">
-        <img class="logo" src="./myImg/joker.svg" alt="">
-        <div>后花园</div>
+        <img class="logo" src="../source/img/joker.png" alt="">
+        <div class="animate-text">后花园</div>
       </div>
-      <button class="btn shadow"><i class="h">H</i><i>ome</i></button>
+      <h1>
+        Hexo
+      </h1> <!-- 博客标题,同样从 _config.yml 获取 -->
+      <p>
+        
+      </p> <!-- 博客描述,从 _config.yml 获取 -->
+      <button class="btn shadow animate-click"><i class="h">H</i><i>ome</i></button>
     </nav>
     <!-- 导航栏 end -->
 
@@ -34,46 +45,70 @@
       <!-- 左侧模块区 begin -->
       <section class="leftList">
         <ul class="model shadow">
-          <li tabindex="1">
-            <img src="./myImg/圣诞老人.svg" alt="">
+          <li tabindex="1" class="animate-click">
+            <img src="../source/img/圣诞老人.svg" alt="">
           </li>
-          <li tabindex="2">
-            <img src="./myImg/新娘.svg" alt="">
+          <li tabindex="2" class="animate-click">
+            <img src="../source/img/新娘.svg" alt="">
           </li>
-          <li tabindex="3">
-            <img src="./myImg/王子.svg" alt="">
+          <li tabindex="3" class="animate-click">
+            <img src="../source/img/王子.svg" alt="">
           </li>
-          <li tabindex="4">
-            <img src="./myImg/女婴儿.svg" alt="">
+          <li tabindex="4" class="animate-click">
+            <img src="../source/img/女婴儿.svg" alt="">
           </li>
         </ul>
       </section>
       <!-- 左侧模块区 end -->
 
       <!-- 左侧展示区 begin -->
-      <section class="leftShow shadow"></section>
+      <section class="leftShow shadow">
+        
+          <h2>
+            Hello World
+              文章标题
+          </h2>
+          <span>
+            Wed Apr 05 2023 18:11:40 GMT+0800
+              2023.04.12
+          </span>
+          <p>
+            
+              摘录
+          </p>
+          
+      </section>
       <!-- 左侧展示区 end -->
 
       <!-- 右侧展示区 begin -->
-      <section class="rightShow shadow"></section>
+      <section class="rightShow shadow">
+
+      </section>
       <!-- 右侧展示区 end -->
 
       <!-- 右侧模块区 begin -->
       <section class="rightList shadow">
-        <!-- <ul class="model shadow">
-          <li tabindex="1">
-            <img src="/img/圣诞老人.svg" alt="">
-          </li>
-          <li tabindex="2">
-            <img src="/img/新娘.svg" alt="">
-          </li>
-          <li tabindex="3">
-            <img src="/img/王子.svg" alt="">
-          </li>
-          <li tabindex="4">
-            <img src="/img/女婴儿.svg" alt="">
-          </li>
-        </ul> -->
+        <div class="posts">
+          
+            <!-- 如果不存在文章,以下代码将不执行 -->
+            
+              <!-- 循环打印所有文章 -->
+              <article>
+                <h2><a href="2023/04/05/成功创建/">
+                    Hello World
+                  </a></h2> <!-- 文章标题和链接 -->
+                <p class="info">
+                  Wed Apr 05 2023 18:11:40 GMT+0800
+                    <!-- 文章日期 -->
+                </p>
+                <p>
+                  
+                </p> <!-- 文章摘要 -->
+              </article>
+              
+                
+                    
+        </div>
       </section>
       <!-- 右侧模块区 end -->
 
@@ -89,6 +124,15 @@
       console.log(1)
     }
   </script>
+  <script src="./js/animation.js"></script>
+  <script src="/blog/js/jquery-3.4.1.min.js"></script>
+  <script src="/blog/fancybox/jquery.fancybox.min.js"></script>
+  <script src="/blog/js/script.js"></script>
+  
+<script src="/blog/js/script.js"></script>
+
+    <!-- 引入 script.js 脚本文件 -->
+</body>
 </body>
 
 </html>
