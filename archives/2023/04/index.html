@@ -26,16 +26,18 @@
     <!-- 导航栏 begin -->
     <nav class="nav shadow">
       <div>
-        <div class="logo_area">
-          <img class="logo" src="./img/joker.svg" alt="">
-          <!-- 博客标题,同样从 _config.yml 获取 -->
-          <div class="animate-text">
-            后花园
+        <div class="blog_desc">
+          <div class="logo_area">
+            <img class="logo" src="./img/joker.svg" alt="">
+            <!-- 博客标题,同样从 _config.yml 获取 -->
+            <div class="animate-text blog_name">
+              <!-- 后花园 -->
+            </div>
           </div>
+          <i>
+            <!-- 记录自己的成长 -->
+          </i> <!-- 博客描述,从 _config.yml 获取 -->
         </div>
-        <i>
-          记录自己的成长
-        </i> <!-- 博客描述,从 _config.yml 获取 -->
       </div>
       <button class="btn shadow animate-click"><i class="h">H</i><i>ome</i></button>
     </nav>
@@ -66,18 +68,21 @@
       <!-- 左侧展示区 begin -->
       <section class="leftShow shadow">
         
-          <h2>
-            Hello World
-              文章标题
-          </h2>
-          <span>
-            Wed Apr 05 2023 18:11:40 GMT+0800
-              2023.04.12
-          </span>
-          <p>
-            
-              摘录
-          </p>
+          <!-- 单个文章简要渲染模板 -->
+          <div class="pageListTemplate shadow">
+            <div class="pageTitle">
+              <!-- 文章标题 -->
+              第一篇文章
+            </div>
+            <div class="pageDesc">
+              <!-- 摘录 -->
+              
+            </div>
+            <div class="pageTime">
+              <!-- 文章日期 -->
+              Wed Apr 05 2023 18:11:40 GMT+0800
+            </div>
+          </div>
           
       </section>
       <!-- 左侧展示区 end -->
@@ -97,7 +102,7 @@
               <!-- 循环打印所有文章 -->
               <article>
                 <h2><a href="2023/04/05/成功创建/">
-                    Hello World
+                    第一篇文章
                   </a></h2> <!-- 文章标题和链接 -->
                 <p class="info">
                   Wed Apr 05 2023 18:11:40 GMT+0800
